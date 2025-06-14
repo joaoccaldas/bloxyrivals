@@ -84,17 +84,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!transitionTriggered) {
       console.warn('⚠️ Maximum wait time exceeded, forcing transition to landing screen');
       showLandingScreen();
-    }
-  }, maxWaitTime);  // Function to handle preloading assets
+    }  }, maxWaitTime);
+
+  // Function to handle preloading assets
   function preloadGameAssets() {
-    return new Promise((resolve) => {      // Preload critical images
+    return new Promise((resolve) => {
+      // Preload critical images
       const imagesToPreload = [
         'assets/Scene/landingpage.png',
         'assets/buttons/shop.png',
-        'assets/player/bear.png',
-        'assets/player/fire.png',
-        'assets/player/joao.png',
-        'assets/player/robot.png'
+        'public/assets/player/bear.png',
+        'public/assets/player/fire.png',
+        'public/assets/player/joao.png',
+        'public/assets/player/robot.png'
       ];
       
       let imagesLoaded = 0;
