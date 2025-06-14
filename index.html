@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
-<head>  <meta charset="UTF-8"/>
+<head>
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Bloxy Rivals – Prototype</title>
-  <link rel="stylesheet" href="css/styles.css"/>
-  <link rel="stylesheet" href="css/confirmation-dialog.css"/>
-  <link rel="stylesheet" href="css/rivals-button.css"/>
+  <!-- Add public/ prefix to CSS paths -->
+  <link rel="stylesheet" href="public/css/styles.css"/>
+  <link rel="stylesheet" href="public/css/confirmation-dialog.css"/>
+  <link rel="stylesheet" href="public/css/rivals-button.css"/>
 </head>
 <body>
   <div id="videoLoadingScreen">
+    <!-- Add public/ prefix to video path -->
     <video id="loadingVideo" preload="auto" muted playsinline autoplay disablePictureInPicture>
-      <source src="assets/videos/loading.mp4" type="video/mp4">
+      <source src="public/assets/videos/loading.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <div id="loadingProgress">
@@ -19,18 +21,24 @@
     </div>
     <button id="skipButton">Skip</button>
   </div>
-  <div id="landingScreen" class="hidden">    <button id="btnRivals" class="rivals-button">
+  
+  <div id="landingScreen" class="hidden">
+    <button id="btnRivals" class="rivals-button">
       <div class="rivals-content">
-        <img src="assets/buttons/rivals.png" alt="Rivals" class="rivals-background" />
+        <!-- Add public/ prefix to button images -->
+        <img src="public/assets/buttons/rivals.png" alt="Rivals" class="rivals-background" />
         <div class="rivals-icon">
           <span class="rivals-label">Rivals</span>
         </div>
       </div>
     </button>
     <button id="btnShop" class="shop-button">
-      <img src="assets/buttons/shop.png" alt="Shop" />
-    </button>    <button id="btnProfile" class="profile-button">
-      <img src="assets/buttons/skin.png" alt="Profile" />
+      <!-- Add public/ prefix to button images -->
+      <img src="public/assets/buttons/shop.png" alt="Shop" />
+    </button>
+    <button id="btnProfile" class="profile-button">
+      <!-- Add public/ prefix to button images -->
+      <img src="public/assets/buttons/skin.png" alt="Profile" />
     </button>
     <button id="btnStart">Play</button>
     <button id="btnGameMode">Game Mode</button>
@@ -55,7 +63,8 @@
           </div>
         </div>
       </div>
-    </div>  </div>
+    </div>
+  </div>
   
   <div id="profileScreen" class="overlay hidden">
     <div class="profile-container">
@@ -66,8 +75,10 @@
       <div class="profile-content">
         <div class="profile-info">
           <div class="profile-avatar">
-            <img src="assets/player/bear.png" alt="Player Avatar" id="playerAvatar">
-          </div>          <div class="profile-details">
+            <!-- Add public/ prefix to player avatar -->
+            <img src="public/assets/player/bear.png" alt="Player Avatar" id="playerAvatar">
+          </div>
+          <div class="profile-details">
             <h3>Current Name: <span id="currentPlayerName">Player</span></h3>
           </div>
         </div>
@@ -93,7 +104,8 @@
   </div>
 
   <canvas id="gameCanvas" width="1000" height="800" style="display: none;"></canvas>
-  <div id="gameContainer"></div>  <div id="ranking-container"></div> <!-- Added container for RankingDisplay -->
+  <div id="gameContainer"></div>
+  <div id="ranking-container"></div>
 
   <!-- Purchase confirmation dialog -->
   <div id="confirmationDialog" class="confirmation-dialog-overlay">
@@ -105,12 +117,14 @@
       <div class="confirmation-dialog-content">
         <div class="item-info">
           <div class="item-image">
-            <img id="confirmItemImg" src="assets/player/bear.png" alt="Item">
+            <!-- Add public/ prefix to item images -->
+            <img id="confirmItemImg" src="public/assets/player/bear.png" alt="Item">
           </div>
           <div class="item-details">
             <div class="item-title" id="confirmItemName">Item Name</div>
             <div class="item-price">
-              <img class="coin-icon" src="assets/buttons/coin.png" alt="Coins"> 
+              <!-- Add public/ prefix to coin icon -->
+              <img class="coin-icon" src="public/assets/buttons/coin.png" alt="Coins"> 
               <span id="confirmItemPrice">100</span>
             </div>
           </div>
@@ -124,8 +138,10 @@
     </div>
   </div>
 
-  <script src="js/videoLoader.js"></script>
-  <script type="module" src="../src/ui/landingPage.js"></script>
+  <!-- Update script paths -->
+  <script src="public/js/videoLoader.js"></script>
+  <!-- Keep src/ paths as they are since they're module imports -->
+  <script type="module" src="src/ui/landingPage.js"></script>
   <script>
     // Global click tracking for debugging
     document.addEventListener('click', function(e) {
