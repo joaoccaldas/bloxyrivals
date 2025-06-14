@@ -343,12 +343,11 @@ export class ShopSystem {
     
     // Set the offer details
     itemName.textContent = offer.title;
-    itemPrice.textContent = offer.price;
-    if (offer.image) {
+    itemPrice.textContent = offer.price;    if (offer.image) {
       itemImg.src = offer.image;
     } else {
       // Default image if no specific image is provided
-      itemImg.src = "assets/player/bear.png";
+      itemImg.src = "public/assets/player/bear.png";
     }
     
     // Show the dialog

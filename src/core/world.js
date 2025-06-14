@@ -1,7 +1,16 @@
 // world.js
 
 const terrainImage = new Image();
-terrainImage.src = 'assets/Scene/scene1.png';
+terrainImage.src = 'public/assets/Scene/scene1.png';
+
+// Add error handling and loading verification
+terrainImage.onload = () => {
+  console.log('✅ Terrain image loaded successfully:', terrainImage.src);
+};
+
+terrainImage.onerror = (error) => {
+  console.error('❌ Failed to load terrain image:', terrainImage.src, error);
+};
 
 export class World {  /**
    * @param {number} tileSize - Size of one tile in pixels (unused for drawing but preserved for layout)

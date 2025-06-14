@@ -12,11 +12,10 @@ export const characters = [
     name: 'Gothor',
     sprite: null, // No image for Gothor
     rarity: 'common'
-  },
-  {
+  },  {
     id: 2,
     name: 'Chef',
-    sprite: 'assets/player/chef.png',
+    sprite: 'public/assets/player/chef.png',
     rarity: 'rare'
   },
   {
@@ -24,34 +23,30 @@ export const characters = [
     name: 'Ninjo',
     sprite: null, // No image for Ninjo (moved to Gary)
     rarity: 'rare'
-  },
-  {
+  },  {
     id: 4,
     name: 'Gary',
-    sprite: 'assets/player/magic.png', // Using magic sprite for Gary (moved from Ninjo)
+    sprite: 'public/assets/player/magic.png', // Using magic sprite for Gary (moved from Ninjo)
+    rarity: 'epic'
+  },  {    id: 5,
+    name: 'Jo',
+    sprite: 'public/assets/player/joao.png', // Using joao sprite for Jo
     rarity: 'epic'
   },  {
-    id: 5,
-    name: 'Jo',
-    sprite: 'assets/player/joao.png', // Using joao sprite for Jo
-    rarity: 'epic'
-  },
-  {
     id: 6,
     name: 'Kraco',
-    sprite: 'assets/player/kraco.png', // Pirate octopus character
+    sprite: 'public/assets/player/kraco.png', // Pirate octopus character
     rarity: 'epic'
-  },
-  {
+  },  {
     id: 7,
     name: 'Nugget',
-    sprite: 'assets/player/bear.png',
+    sprite: 'public/assets/player/bear.png',
     rarity: 'super'
   },
   {
     id: 8,
     name: 'Wus', // Robot
-    sprite: 'assets/player/robot.png',
+    sprite: 'public/assets/player/robot.png',
     rarity: 'mythic'
   },
   {
@@ -59,29 +54,25 @@ export const characters = [
     name: 'Rivalking',
     sprite: null, // No image for Rivalking
     rarity: 'mythic'
-  },
-  {
+  },  {
     id: 10,
     name: 'Skory',
-    sprite: 'assets/player/skory.png',
+    sprite: 'public/assets/player/skory.png',
     rarity: 'mythic'
-  },  {
-    id: 11,
+  },  {    id: 11,
     name: 'Tracy',
-    sprite: 'assets/player/chef.png', // Using chef sprite for Tracy
+    sprite: 'public/assets/player/chef.png', // Using chef sprite for Tracy
     rarity: 'legendary'
-  },
-  {
+  },  {
     id: 12,
     name: 'Fire',
-    sprite: 'assets/player/fire.png', // Fire elemental character
+    sprite: 'public/assets/player/fire.png', // Fire elemental character
     rarity: 'mythic'
-  }
-  // Example for adding a new character:
+  }  // Example for adding a new character:
   // {
   //   id: 10, // Ensure unique ID
   //   name: 'Nova',
-  //   sprite: 'assets/player/nova.png' // Ensure this asset exists
+  //   sprite: 'public/assets/player/nova.png' // Ensure this asset exists
   // }
 ];
 
