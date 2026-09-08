@@ -1,8 +1,16 @@
-IyBCbG94eSBSaXZhbHMKCipqQSBtb2Rlcm4sIG1vZHVsYXIgSFRNTDUgY2Fu
-dmFzIGdhbWUqKgoKQnJvd3NlciBnYW1lIHdpdGggY29tcHJlaGVuc2l2ZSBy
-ZWZhY3RvcmluZyBmb3Igc2NhbGFiaWxpdHkgYW5kIG1haW50YWluYWJpbGl0
-eS4gRmVhdHVyaW5nIGR5bmFtaWMgcGxheWVyIG1vdmVtZW50LCBtdWx0aXBs
-ZSBjaGFyYWN0ZXJzLCBib3NzIGJhdHRsZXMsIGFuZCByZXNwb25zaXZlIGRl
-c2lnbi4KCiMjIFN0YXR1cwpDb21wbGV0ZS4gQnVpbHQgYXMgYSBicm93c2Vy
-IGdhbWluZyBleHBlcmltZW50LgoKKiJCdWlsdCBieSBKbcOjbyBDYWxkYXMg
-fCBqb2FvY2NhbGRhc0BnbWFpbC5jb20iKio=
+# Bloxy Rivals
+
+The **canonical** Bloxy Rivals game — a modular HTML5 canvas action game with
+dynamic movement, multiple characters, boss battles, and responsive design.
+
+**Play:** https://joaoccaldas.github.io/bloxyrivals/
+
+## The Bloxy Rivals family
+- **`bloxyrivals`** *(this repo)* — canonical build of the original game.
+- [`bloxyrivals2`](https://github.com/joaoccaldas/bloxyrivals2) — the **sequel**
+  (new characters, improved graphics). A separate title, not a duplicate.
+- [`bloxy1`](https://github.com/joaoccaldas/bloxy1) — **deprecated** early prototype.
+  Its test harnesses (`TestValidation.js`, `test-runner.html`, `testMedalSystem.html`)
+  are worth harvesting into this repo.
+
+Built by João Caldas.
